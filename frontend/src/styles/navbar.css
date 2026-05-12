@@ -1,0 +1,109 @@
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 2rem;
+  background: var(--color-surface-light);
+  border-bottom: 1px solid #d6cff5;
+}
+
+body.dark-mode .nav {
+  background: var(--color-surface-dark);
+  border-bottom: 1px solid #2e3458;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo {
+  width: 38px;
+  height: 38px;
+}
+
+.nav-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #7c6cf8, #4f9dfb);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #6a5ca2;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #4f9dfb;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-user-icon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* POPUP */
+.popup-card {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: white;
+  border: 1px solid #d7cdf9;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .popup-card {
+  background: #16182c;
+  border: 1px solid #2e3458;
+}
+
+.popup-username {
+  font-weight: bold;
+  color: #5f4b8b;
+}
+
+.popup-email {
+  font-size: 0.9rem;
+  color: #7e72a9;
+  margin-bottom: 1rem;
+}
+
+.popup-logout {
+  width: 100%;
+  padding: 0.5rem;
+  background: #ff6a82;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.popup-logout:hover {
+  opacity: 0.85;
+}
